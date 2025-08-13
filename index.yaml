@@ -1,5 +1,20 @@
 apiVersion: v1
 entries:
+  base:
+  - apiVersion: v2
+    appVersion: 1.27.0
+    created: "2025-08-14T06:39:37.903492+09:00"
+    description: Helm chart for deploying Istio cluster resources and CRDs
+    digest: 791895e7bb322d5703696da67caa4f375299b045740417a50de8f77a7b02e35f
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    name: base
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - charts/istio-base-1.27.0.tgz
+    version: 1.27.0
   cert-manager:
   - annotations:
       artifacthub.io/category: security
@@ -10,7 +25,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v2
     appVersion: v1.18.2
-    created: "2025-08-07T01:32:49.8063+09:00"
+    created: "2025-08-14T06:39:37.90043+09:00"
     description: A Helm chart for cert-manager
     digest: daddf7af7b1f0eaaa10edd790aefa0bd8c2b07830febf659460d843217f5b3c5
     home: https://cert-manager.io
@@ -31,10 +46,26 @@ entries:
     urls:
     - charts/cert-manager-v1.18.2.tgz
     version: v1.18.2
+  cni:
+  - apiVersion: v2
+    appVersion: 1.27.0
+    created: "2025-08-14T06:39:37.904423+09:00"
+    description: Helm chart for istio-cni components
+    digest: 0a0ba6f3e63fb950deb9cbad50127aa70d60ff26a57726d4be7a50ebefd7d89e
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio-cni
+    - istio
+    name: cni
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - charts/istio-cni-1.27.0.tgz
+    version: 1.27.0
   connector:
   - apiVersion: v1
     appVersion: latest
-    created: "2025-08-07T01:32:49.806751+09:00"
+    created: "2025-08-14T06:39:37.901237+09:00"
     description: Twingate Connector helm chart
     digest: e89152c97670a9c9bc5e837a05c76b4f11811072986624eeef282d1443bba008
     home: https://www.twingate.com
@@ -43,10 +74,27 @@ entries:
     urls:
     - charts/connector-0.1.31.tgz
     version: 0.1.31
+  istiod:
+  - apiVersion: v2
+    appVersion: 1.27.0
+    created: "2025-08-14T06:39:37.906113+09:00"
+    description: Helm chart for istio control plane
+    digest: fbe55cc9c2bdc959b40dd43138b65397d4661a2d7f6eaaf22e0426db14a16248
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio
+    - istiod
+    - istio-discovery
+    name: istiod
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - charts/istio-istiod-1.27.0.tgz
+    version: 1.27.0
   metallb:
   - apiVersion: v2
     appVersion: v0.15.2
-    created: "2025-08-07T01:32:49.80858+09:00"
+    created: "2025-08-14T06:39:37.910507+09:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -72,7 +120,7 @@ entries:
   nfs-subdir-external-provisioner:
   - apiVersion: v1
     appVersion: 4.0.2
-    created: "2025-08-07T01:32:49.808924+09:00"
+    created: "2025-08-14T06:39:37.911544+09:00"
     description: nfs-subdir-external-provisioner is an automatic provisioner that
       used your *already configured* NFS server, automatically creating Persistent
       Volumes.
@@ -89,4 +137,20 @@ entries:
     urls:
     - charts/nfs-subdir-external-provisioner-4.0.18.tgz
     version: 4.0.18
-generated: "2025-08-07T01:32:49.801675+09:00"
+  ztunnel:
+  - apiVersion: v2
+    appVersion: 1.27.0
+    created: "2025-08-14T06:39:37.906796+09:00"
+    description: Helm chart for istio ztunnel components
+    digest: a1a9e3300194daeb8c627ddcbc1ead8e1c6f2f7f25abb638694021deb4b650b1
+    icon: https://istio.io/latest/favicons/android-192x192.png
+    keywords:
+    - istio-ztunnel
+    - istio
+    name: ztunnel
+    sources:
+    - https://github.com/istio/istio
+    urls:
+    - charts/istio-ztunnel-1.27.0.tgz
+    version: 1.27.0
+generated: "2025-08-14T06:39:37.89308+09:00"
