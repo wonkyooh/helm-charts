@@ -3,7 +3,7 @@ entries:
   awx-operator:
   - apiVersion: v2
     appVersion: 2.19.1
-    created: "2025-11-06T13:35:26.380998+09:00"
+    created: "2025-12-09T18:12:11.876193+09:00"
     description: The community-supported AWX Operator Helm Chart
     digest: e0de41dbd6b1cc6c615f335149198eeeee6492b5f833e5163de8e6bc39cd76b1
     name: awx-operator
@@ -14,7 +14,7 @@ entries:
   base:
   - apiVersion: v2
     appVersion: 1.27.0
-    created: "2025-11-06T13:35:26.38308+09:00"
+    created: "2025-12-09T18:12:11.880108+09:00"
     description: Helm chart for deploying Istio cluster resources and CRDs
     digest: 791895e7bb322d5703696da67caa4f375299b045740417a50de8f77a7b02e35f
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -36,7 +36,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v2
     appVersion: v1.18.2
-    created: "2025-11-06T13:35:26.387479+09:00"
+    created: "2025-12-09T18:12:11.884648+09:00"
     description: A Helm chart for cert-manager
     digest: daddf7af7b1f0eaaa10edd790aefa0bd8c2b07830febf659460d843217f5b3c5
     home: https://cert-manager.io
@@ -60,7 +60,7 @@ entries:
   cni:
   - apiVersion: v2
     appVersion: 1.27.0
-    created: "2025-11-06T13:35:26.388327+09:00"
+    created: "2025-12-09T18:12:11.88533+09:00"
     description: Helm chart for istio-cni components
     digest: 0a0ba6f3e63fb950deb9cbad50127aa70d60ff26a57726d4be7a50ebefd7d89e
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -76,7 +76,7 @@ entries:
   connector:
   - apiVersion: v1
     appVersion: latest
-    created: "2025-11-06T13:35:26.388931+09:00"
+    created: "2025-12-09T18:12:11.885781+09:00"
     description: Twingate Connector helm chart
     digest: e89152c97670a9c9bc5e837a05c76b4f11811072986624eeef282d1443bba008
     home: https://www.twingate.com
@@ -85,10 +85,27 @@ entries:
     urls:
     - charts/connector-0.1.31.tgz
     version: 0.1.31
+  gha-runner-scale-set-controller:
+  - apiVersion: v2
+    appVersion: 0.13.0
+    created: "2025-12-09T18:12:11.892074+09:00"
+    description: A Helm chart for install actions-runner-controller CRD
+    digest: 2df4656eaca459bc6f13619ef388d2d5b06fe5bbaa6cb9b7cc1fd43954b537bc
+    home: https://github.com/actions/actions-runner-controller
+    maintainers:
+    - name: actions
+      url: https://github.com/actions
+    name: gha-runner-scale-set-controller
+    sources:
+    - https://github.com/actions/actions-runner-controller
+    type: application
+    urls:
+    - charts/gha-runner-scale-set-controller-0.13.0.tgz
+    version: 0.13.0
   istiod:
   - apiVersion: v2
     appVersion: 1.27.0
-    created: "2025-11-06T13:35:26.390809+09:00"
+    created: "2025-12-09T18:12:11.893503+09:00"
     description: Helm chart for istio control plane
     digest: fbe55cc9c2bdc959b40dd43138b65397d4661a2d7f6eaaf22e0426db14a16248
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -105,7 +122,7 @@ entries:
   metallb:
   - apiVersion: v2
     appVersion: v0.15.2
-    created: "2025-11-06T13:35:26.392618+09:00"
+    created: "2025-12-09T18:12:11.895124+09:00"
     dependencies:
     - condition: crds.enabled
       name: crds
@@ -131,7 +148,7 @@ entries:
   nfs-subdir-external-provisioner:
   - apiVersion: v1
     appVersion: 4.0.2
-    created: "2025-11-06T13:35:26.393169+09:00"
+    created: "2025-12-09T18:12:11.895584+09:00"
     description: nfs-subdir-external-provisioner is an automatic provisioner that
       used your *already configured* NFS server, automatically creating Persistent
       Volumes.
@@ -151,7 +168,7 @@ entries:
   ztunnel:
   - apiVersion: v2
     appVersion: 1.27.0
-    created: "2025-11-06T13:35:26.393657+09:00"
+    created: "2025-12-09T18:12:11.896058+09:00"
     description: Helm chart for istio ztunnel components
     digest: a1a9e3300194daeb8c627ddcbc1ead8e1c6f2f7f25abb638694021deb4b650b1
     icon: https://istio.io/latest/favicons/android-192x192.png
@@ -164,4 +181,4 @@ entries:
     urls:
     - charts/ztunnel-1.27.0.tgz
     version: 1.27.0
-generated: "2025-11-06T13:35:26.379326+09:00"
+generated: "2025-12-09T18:12:11.875443+09:00"
